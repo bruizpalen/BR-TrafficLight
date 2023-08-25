@@ -11,6 +11,7 @@ function App() {
   const handleLightOn = (color) => {
     setLightOnSuccess(color === "success");
     setLightOnDanger(color === "danger");
+    setLightOnWarning(color === "warning");
   };
   return (
     <>
