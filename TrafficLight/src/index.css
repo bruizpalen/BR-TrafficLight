@@ -28,3 +28,11 @@
   width: 20px;
   height: 50px;
 }
+
+.bg-purple {
+  background-color: rgb(103, 8, 103);
+}
+
+button .bg-purple {
+  opacity: 1; /* Override hover opacity */
+}
