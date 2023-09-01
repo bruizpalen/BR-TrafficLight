@@ -12,7 +12,6 @@ function App() {
   const [additionalLight, setAdditionalLight] = useState(false);
   const [feria, setFeria] = useState(false);
   const [colorIndex, setColorIndex] = useState(0);
-  const [counter, setCounter] = useState(0);
   const [colorFeria, setColorFeria] = useState("");
 
   const handleLightOn = (color) => {
