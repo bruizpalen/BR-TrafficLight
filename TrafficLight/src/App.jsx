@@ -26,7 +26,6 @@ function App() {
 
   useEffect(() => {
     if (feria) {
-      // Start color cycling
       const intervalId = setInterval(() => {
         const nextColorIndex = (colorIndex + 1) % colorsFeria.length;
         setColorIndex(nextColorIndex);
@@ -34,7 +33,6 @@ function App() {
         setCounter((prevCounter) => prevCounter + 1);
       }, colorChangeInterval);
 
-      // Cleanup function to stop color cycling when "feria" is true or the component unmounts
       return () => {
         clearInterval(intervalId);
       };
